@@ -7,13 +7,19 @@ Proyecto básico realizado con:
 * PostgreSQL 10.10
 * Foundation 6.6.3
 
-### Código fuente
+(Proyecto realizado en sistema operativo linux mint)
+
+Ir a la carpeta donde estará el proyecto
+```bash
+cd /var/www/html/
+```
+
 Obtener el código fuente ejecutando:
 ```bash
 git clone https://github.com/vidalchile/sistema-registro-empleados.git
 ```
 
-Ir a la carpeta del proyecto  y crear ambiente virtual de python3.6 (Proyecto realizado en sistema operativo linux mint)
+Ir a la carpeta del proyecto  y crear ambiente virtual de python3.6
 
 Opción 1 para crear ambiente virtual
 ```bash
