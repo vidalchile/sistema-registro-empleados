@@ -19,22 +19,18 @@ Obtener el código fuente ejecutando:
 git clone https://github.com/vidalchile/sistema-registro-empleados.git
 ```
 
-Ir a la carpeta del proyecto  y crear ambiente virtual de python3.6
+Ir a la carpeta del proyecto
 
-Opción 1 para crear ambiente virtual
 ```bash
 cd /var/www/html/sistema-registro-empleados
-python3.6 -m venv env
 ```
 
-Activar el ambiente virtual en el terminal actual
+Crear ambiente virtual de python3.6
 
-`source env/bin/activate`
-
-Opcion 2 para crear ambiente virtual
 ```bash
 virtualenv -p /usr/bin/python3  /var/www/html/sistema-registro-empleados/env
 ```
+
 Activar el ambiente virtual
 ```bash
 source /var/www/html/sistema-registro-empleados/env/bin/activate
@@ -52,3 +48,5 @@ pip install -r requirements.txt
 cd /var/www/html/sistema-registro-empleados
 python manage.py runserver
 ```
+
+Luego de haber ejecutado el proyecto, se puede acceder desde la ruta: http://127.0.0.1:8000
