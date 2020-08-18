@@ -1,0 +1,6 @@
+<h1>Listado empleados por trabajo</h1>
+<ul>
+    {% for empleado in object_list %}
+        <li>{{ empleado.firt_name }}</li>
+    {% endfor %}
+</ul>

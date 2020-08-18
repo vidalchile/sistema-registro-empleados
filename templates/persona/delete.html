@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block title %} Editar Empleado {% endblock title %}
+{% block content %}
+{% include 'includes/header.html' %}
+<div class="grid-container">
+    <div class="grid-x">
+        <h1 class="cell">Eliminar Empleado</h1>
+        <form class="cell" method="POST">
+            {% csrf_token %}
+            <div class="callout secondary">
+                <h5>¿Seguro que desea eliminar al empleado {{ empleado.firt_name }} {{ empleado.last_name }}?</h5>
+                
+                <div class="small button-group">
+                    <button class="alert button" type="submit" >Confirmar</button>
+                    &nbsp;
+                    <a href="{% url 'persona_app:empleados_admin' %}" class="success button" type="button" >Volver</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock content %}

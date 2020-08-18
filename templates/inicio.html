@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Página de inicio sistema empleados {% endblock title %}
+{% block content %}
+{% include 'includes/header.html' %}
+    <div class="callout large">
+            <div class="grid-x align-center">
+                <div class="cell large-6 align-center">
+                    <h5>Bienvenido al sistema de registro de Empleados</h5>
+                    <p>Proyecto básico realizado con:</p>
+                    <ul>
+                        <li>Python 3.6.8</li>
+                        <li>Django 3.0</li>
+                        <li>PostgreSQL 10.10</li>
+                        <li>Foundation 6.6.3</li>
+                    </ul>
+                    <a href="{% url 'persona_app:empleados_all' %}">Ver empleados.</a>
+                    <br>
+                    <a href="/admin">Administración de Django</a>
+                </diV>
+                <div class="cell large-6 align-center">
+                    <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                        <div class="orbit-wrapper">
+                            <div class="orbit-controls">
+                                <button class="orbit-previous"><span class="show-for-sr">Imagen Anterior</span>&#9664;&#xFE0E;</button>
+                                <button class="orbit-next"><span class="show-for-sr">Siguiente Imagen</span>&#9654;&#xFE0E;</button>
+                            </div>
+                            <ul class="orbit-container">
+                                <li class="is-active orbit-slide">
+                                    <figure class="orbit-figure">
+                                        <img class="orbit-image" style="height: 300px;" src="{% static 'img/home.jpg' %}" alt="Space">
+                                        <figcaption class="orbit-caption">Trabajar en la cosa correcta probablemente es más importante que trabajar duro</figcaption>
+                                    </figure>
+                                </li>
+                                <li class="orbit-slide">
+                                    <figure class="orbit-figure">
+                                        <img class="orbit-image" style="height: 300px;" src="{% static 'img/home2.jpg' %}" alt="Space">
+                                        <figcaption class="orbit-caption">Cuanto más hacemos, más podemos hacer</figcaption>
+                                    </figure>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </diV>
+            </div>
+    </div>
+{% endblock content %}

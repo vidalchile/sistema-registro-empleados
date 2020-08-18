@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} Pagina Exito {% endblock title %}
+{% block content %}
+{% include 'includes/header.html' %}
+<br>
+<div class="grid-container">
+    <div class="grid-x">
+            <div class="medium-12 cell">
+                <div class="callout success">
+                    <h5>Felicitaciones, se guardo correctamente el empleado.</h5>
+                    <a href="{% url 'persona_app:empleados_all' %}" class="button" type="submit" >Volver listado empleados</a>
+                </div>
+            </div>
+    </div>
+</div>
+{% endblock content %}
